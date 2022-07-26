@@ -1,0 +1,181 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/**HEADER**/
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;/*tome de forma automatica la altura del padre*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav .nav-right-section a {
+    margin-right: 10px;
+    color: #000000;
+}
+
+/*icono de menu*/
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat; /*para q la imagen no se repita*/
+    background-position: center; /*la imagen quede al centro 100%*/
+    background-size: contain; /*para q logre estar al tamaño del contenedor*/
+    width: 25px;
+    height: 25px;
+}
+
+/*imagen kike*/
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/**MAIN**/
+main {
+    margin-top: 80px;
+    text-align: center;
+}
+
+main .main-logo {
+    width: 530px;
+    margin: 0 auto; /*de forma dinamica divide entre el lefth y rigth, la etiqueta siempre en el centro*/
+    margin-bottom: 35px;
+}
+
+main .main-logo img {
+    width: 430px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto; /*posicionarse en la parte del medio*/
+    margin-bottom: 35px;
+}
+
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #DFE1E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input {
+    width: 450px; /*mas chico q su padre*/
+    height: 40px;
+    border: none;
+    outline: none; /*quitarle la linea q se hace al dar clic dentro el borde azul o negro q resalta bn feo jaja*/
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447; /*generar sombra al elemento*/
+    border-color: #dfe1e500;
+}
+/*iconos*/
+main .main-input .search-icon {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    height: 36px;
+    background-color: #F2F2F2;
+    border: none;
+    font-size: 14px;
+    color: #5F6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8;
+    margin-right: 13px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute; /*el footer se quede al final de la pagina*/
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left {
+    justify-self: left; /*el contenido se vaya a la izquierda*/
+}
+
+footer .footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
+
+footer ul li a:hover {
+    text-decoration:underline ;
+}
